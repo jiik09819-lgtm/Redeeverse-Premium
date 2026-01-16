@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redeeverse – FC Mobile Redeem Codes</title>
+
+  <meta name="description" content="Redeeverse shows the latest FC Mobile redeem codes with rewards and expiry status.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Redeeverse</h1>
+    <p>Latest FC Mobile redeem codes with rewards and expiry status.</p>
+
+    <a class="btn" href="https://redeem.fcm.ea.com/" target="_blank">
+      Official FC Mobile Redeem Site
+    </a>
+  </header>
+
+  <section class="codes-section">
+    <h2>Redeem Codes</h2>
+    <div id="codes"></div>
+  </section>
+
+  <!-- OWNER PANEL (Hidden) -->
+  <div id="ownerPanel" class="owner-panel hidden">
+    <h3>Owner Panel</h3>
+
+    <input type="text" id="ownerCodeInput" placeholder="Enter Owner Code">
+    <button onclick="unlockOwner()">Unlock</button>
+
+    <div id="ownerControls" class="hidden">
+      <input type="text" id="newCode" placeholder="Redeem Code">
+      <input type="text" id="newReward" placeholder="Reward">
+      <input type="text" id="newDate" placeholder="Date">
+      <select id="newStatus">
+        <option>Active</option>
+        <option>Expired</option>
+      </select>
+
+      <button onclick="addCode()">Publish Code</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Redeeverse · Fan Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
